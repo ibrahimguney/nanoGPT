@@ -1,12 +1,29 @@
-.DS_Store
-.idea
-.ipynb_checkpoints/
-.vscode
+# Python cache
 __pycache__/
-*.bin
-*.pkl
-*.pt
 *.pyc
+*.pyo
+
+# Eğitilmiş modeller
+out-*/
+*.pt
+*.ckpt
+
+# Veri dosyaları (prepare.py ile üretilir)
+data/*/train.bin
+data/*/val.bin
+data/*/input.txt
+data/*/meta.pkl
+
+# Kök dizindeki input.txt
 input.txt
-env/
-venv/
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# wandb
+wandb/
